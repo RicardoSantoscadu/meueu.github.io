@@ -4,71 +4,65 @@
   <meta charset="UTF-8">
   <title>Ricardo Araujo | Desenvolvedor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #e5e7eb;
-    }
-    header {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .card {
-      background: #020617;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Ricardo Araujo</h1>
-  <p>Desenvolvedor | Delphi • Node.js • SQL</p>
+<header class="hero">
+  <div class="hero-text">
+    <h1>Ricardo Araujo</h1>
+    <h2><span>&lt;dev&gt;</span> Delphi • Node.js • SQL <span>&lt;/dev&gt;</span></h2>
+    <p>Desenvolvedor focado em soluções práticas, eficientes e bem estruturadas.</p>
+  </div>
 </header>
 
-<section>
-  <div class="card">
-    <h2>Sobre mim</h2>
-    <p>
-      Sou desenvolvedor formado em Análise e Desenvolvimento de Sistemas,
-      com experiência em Delphi e Node.js, focado em criar soluções práticas
-      e eficientes.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Projetos</h2>
-    <ul>
-      <li>Controle Financeiro – <a href="#">GitHub</a></li>
-      <li>Painel de Senhas – <a href="#">GitHub</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Contato</h2>
-    <p>
-      GitHub: <a href="https://github.com/SEUUSUARIO">github.com/SEUUSUARIO</a><br>
-      LinkedIn: <a href="#">Seu LinkedIn</a>
-    </p>
+<section class="section">
+  <h3>Skills</h3>
+  <div class="skills">
+    <div class="skill-card">Delphi / uniGUI</div>
+    <div class="skill-card">Node.js</div>
+    <div class="skill-card">SQL Server</div>
+    <div class="skill-card">Git & GitHub</div>
+    <div class="skill-card">Docker (iniciante)</div>
   </div>
 </section>
 
+<section class="section dark">
+  <h3>Projetos</h3>
+
+  <div class="slider">
+    <div class="slide active">
+      <h4>Controle Financeiro</h4>
+      <p>Aplicação para controle de receitas e despesas com dashboard.</p>
+      <a href="#" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="slide">
+      <h4>Painel de Senhas</h4>
+      <p>Sistema para clínicas com painel exibido em TV.</p>
+      <a href="#" target="_blank">Ver no GitHub</a>
+    </div>
+  </div>
+
+  <div class="slider-buttons">
+    <button onclick="prev()">‹</button>
+    <button onclick="next()">›</button>
+  </div>
+</section>
+
+<section class="section">
+  <h3>Contato</h3>
+  <p>
+    GitHub: <a href="https://github.com/ricardosantoscadu" target="_blank">github.com/ricardosantoscadu</a><br>
+    LinkedIn: <a href="#" target="_blank">Seu LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  © 2026 • Ricardo Araujo
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
