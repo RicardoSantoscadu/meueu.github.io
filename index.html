@@ -10,6 +10,21 @@
 <body>
 
 <header class="hero">
+  <svg class="hero-filter" viewBox="0 0 300 300" width="0" height="0">
+    <defs>
+      <filter id="glitch-effect">
+        <feDisplacementMap in="SourceGraphic" scale="3" xChannelSelector="R" yChannelSelector="G" />
+        <feColorMatrix type="saturate" values="1.5"/>
+        <feComponentTransfer>
+          <feFuncR type="linear" slope="0.8" intercept="0.2"/>
+          <feFuncG type="linear" slope="0.3"/>
+          <feFuncB type="linear" slope="0.3"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  </svg>
+
+  
   <div class="hero-text">
     <h1>Ricardo Araujo</h1>
     <h2><span>&lt;dev&gt;</span> Delphi • Node.js • SQL <span>&lt;/dev&gt;</span></h2>
